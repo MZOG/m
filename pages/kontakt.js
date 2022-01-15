@@ -9,7 +9,7 @@ export default function Kontakt({ allPosts }) {
       <Head>
         <title>Kontakt - Marcin Zogrodnik</title>
       </Head>
-      <Container classes="pt-10 md:pt-20 md:flex items-center justify-between flex-wrap">
+      <Container classes="pb-20 md:flex items-center justify-between flex-wrap">
         <div className="md:w-1/2">
           <h1 className="text-[25px] md:text-[37px] font-bold mb-4 md:mb-7">
             Kontakt
@@ -24,6 +24,7 @@ export default function Kontakt({ allPosts }) {
 
         <div className="md:w-1/3 md:flex items-center justify-center p-10 md:p-0">
           <svg
+            className="md:max-w-[300px]"
             viewBox="0 0 332 269"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

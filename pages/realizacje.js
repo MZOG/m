@@ -11,7 +11,7 @@ export default function Realizacje({ allPosts, allShowcase }) {
         <title>Realizacje - Marcin Zogrodnik</title>
         <description>elo</description>
       </Head>
-      <Container classes="py-10 md:py-20 md:flex items-center justify-between flex-wrap">
+      <Container classes="pb-20 md:flex items-center justify-between flex-wrap">
         <div className="md:w-1/2">
           <h1 className="text-[25px] md:text-[37px] font-bold mb-4 md:mb-7">
             Realizacje
@@ -25,6 +25,7 @@ export default function Realizacje({ allPosts, allShowcase }) {
 
         <div className="md:w-1/3 md:flex items-center justify-center">
           <svg
+            className="md:max-w-[300px]"
             viewBox="0 0 411 298"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
