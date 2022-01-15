@@ -2,13 +2,15 @@ import { getAllPosts } from "../lib/api";
 import Head from "next/head";
 import Layout from "../components/layout";
 import Container from "../components/container";
+import Meta from "../components/meta";
 
 export default function Kontakt({ allPosts }) {
   return (
     <Layout allPosts={allPosts}>
-      <Head>
-        <title>Kontakt - Marcin Zogrodnik</title>
-      </Head>
+      <Meta
+        title="Kontakt"
+        description="Masz pytanie dotyczące strony internetowej? Zadzwoń lub napisz do mnie. Nie martw się, nie będę za wszelką cenę próbował sprzedać Ci swoich usług."
+      />
       <Container classes="pb-20 md:flex items-center justify-between flex-wrap">
         <div className="md:w-1/2">
           <h1 className="text-[25px] md:text-[37px] font-bold mb-4 md:mb-7">
@@ -104,8 +106,8 @@ export default function Kontakt({ allPosts }) {
           </svg>
         </div>
       </Container>
-      <Container classes="flex pb-10 mt-10 md:mt-0">
-        <div className="md:flex md:mt-20">
+      <Container classes="flex pb-20 mt-10 md:mt-0">
+        <div className="md:flex">
           <div className="mb-10 md:mb-0">
             <p className="font-medium mb-3 md:text-xl text-mz-default">
               Zadzwoń

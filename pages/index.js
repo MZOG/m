@@ -1,7 +1,6 @@
 import { getAllPosts, getAllShowcase, getAllTestimonials } from "../lib/api";
 import { CMS_NAME } from "../lib/constants";
 import Meta from "../components/meta";
-
 import Layout from "../components/layout";
 import Head from "next/head";
 import Hero from "../components/hero";
@@ -15,10 +14,7 @@ export default function Index({ allPosts, allShowcase, allTestimonials }) {
   return (
     <>
       <Layout allPosts={allPosts}>
-        <Meta
-          title="Marcin Zogrodnik - Strony internetowe JAMstack"
-          description="Rozwiń swój biznes w internecie. Tworzę proste i szybkie strony internetowe JAMstack dla małych i średnich firm."
-        />
+        <Meta description="Rozwiń swój biznes w internecie. Tworzę proste i szybkie strony internetowe JAMstack dla małych i średnich firm." />
         <Hero />
         <HomepageOffer />
         <Showcase allShowcase={allShowcase} />

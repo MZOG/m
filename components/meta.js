@@ -4,7 +4,11 @@ import { CMS_NAME, HOME_OG_IMAGE_URL } from "../lib/constants";
 export default function Meta({ title, description, shareImage }) {
   return (
     <Head>
-      <title>{title}</title>
+      <title>{`${
+        title
+          ? `${title} - Marcin Zogrodnik | Strony internetowe`
+          : "Marcin Zogrodnik | Strony internetowe"
+      }`}</title>
       <meta name="description" content={description} />
       <link
         rel="apple-touch-icon"
@@ -35,6 +39,17 @@ export default function Meta({ title, description, shareImage }) {
       <meta name="theme-color" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
 
+      <meta
+        property="og:title"
+        content={`${
+          title
+            ? `${title} - Marcin Zogrodnik | Strony internetowe`
+            : "Marcin Zogrodnik"
+        }`}
+      />
+      <meta property="og:description" content={description} />
+      <meta property="og:url" content="https://marcinzogrodnik.pl" />
+      <meta property="og:type" content="website" />
       <meta
         property="og:image"
         content={shareImage ? shareImage : HOME_OG_IMAGE_URL}

@@ -42,7 +42,7 @@ export default function Footer({ allPosts }) {
               </Link>
             </li>
             <li className="mt-1">
-              <Link href="/polityka-prywatnosci">
+              <Link href="/prywatnosc">
                 <a className="text-sm text-mz-default hover:underline">
                   Polityka prywatności
                 </a>

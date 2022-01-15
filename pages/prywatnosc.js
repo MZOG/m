@@ -2,13 +2,12 @@ import { getAllPosts } from "../lib/api";
 import Head from "next/head";
 import Layout from "../components/layout";
 import Container from "../components/container";
+import Meta from "../components/meta";
 
 export default function Polityka({ allPosts }) {
   return (
     <Layout allPosts={allPosts}>
-      <Head>
-        <title>Polityka prywatności - Marcin Zogrodnik</title>
-      </Head>
+      <Meta title="Polityka prywatności" />
       <Container classes="py-10 md:py-20 custom-post">
         <h1 className="text-[25px] md:text-[37px] font-bold mb-4 md:mb-7">
           Polityka prywatności

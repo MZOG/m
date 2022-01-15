@@ -3,6 +3,7 @@ import Head from "next/head";
 import Layout from "../components/layout";
 import Container from "../components/container";
 import ContactUs from "../components/contactUs";
+import Meta from "../components/meta";
 
 export default function Oferta({ allPosts }) {
   const offerList = [
@@ -63,9 +64,10 @@ export default function Oferta({ allPosts }) {
 
   return (
     <Layout allPosts={allPosts}>
-      <Head>
-        <title>Oferta - Marcin Zogrodnik</title>
-      </Head>
+      <Meta
+        title="Oferta"
+        description="JAMstack? WordPress? Sprawdź jak mogę pomóc Twojej firmie zaistnieć w internecie."
+      />
       <Container classes="pb-20 md:flex items-center justify-between flex-wrap">
         <div className="md:w-1/2">
           <h1 className="text-[25px] md:text-[37px] font-bold mb-4 md:mb-7">

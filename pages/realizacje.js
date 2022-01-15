@@ -3,14 +3,15 @@ import Head from "next/head";
 import Layout from "../components/layout";
 import Container from "../components/container";
 import ContactUs from "../components/contactUs";
+import Meta from "../components/meta";
 
 export default function Realizacje({ allPosts, allShowcase }) {
   return (
     <Layout allPosts={allPosts}>
-      <Head>
-        <title>Realizacje - Marcin Zogrodnik</title>
-        <description>elo</description>
-      </Head>
+      <Meta
+        title="Realizacje"
+        description="Realizacje stron internetowych JAMstack oraz WordPress."
+      />
       <Container classes="pb-20 md:flex items-center justify-between flex-wrap">
         <div className="md:w-1/2">
           <h1 className="text-[25px] md:text-[37px] font-bold mb-4 md:mb-7">

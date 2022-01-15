@@ -6,13 +6,15 @@ import Link from "next/link";
 import { parseISO, format } from "date-fns";
 import { pl } from "date-fns/locale";
 import ContactUs from "../../components/contactUs";
+import Meta from "../../components/meta";
 
 export default function Blog({ allPosts }) {
   return (
     <Layout allPosts={allPosts}>
-      <Head>
-        <title>Blog - Marcin Zogrodnik</title>
-      </Head>
+      <Meta
+        title="Blog"
+        description="Piszę o głównie na tematy związane z moją pasją, czyli programowaniem - Front End. Znajdziesz tutaj też troszkę SEO, poradników itd."
+      />
       <Container classes="pb-20 md:flex items-center justify-between flex-wrap">
         <div className="md:w-1/2">
           <h1 className="text-[25px] md:text-[37px] font-bold mb-4 md:mb-7">
