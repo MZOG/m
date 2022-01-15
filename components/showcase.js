@@ -12,11 +12,16 @@ export default function Showcase({ allShowcase }) {
         {allShowcase.slice(0, 4).map((showcase) => (
           <a
             target="_blank"
+            rel="noopener"
             key={showcase.slug}
             href={showcase.fullURL}
             className="group block pb-10"
           >
-            <img className="rounded-xl mb-5" src={showcase.coverImage} />
+            <img
+              className="rounded-xl mb-5"
+              src={showcase.coverImage}
+              alt={showcase.title}
+            />
             <div className="md:px-5">
               <h3 className="text-[22px] md:text-[27px] font-bold text-mz-default mb-5">
                 {showcase.title}

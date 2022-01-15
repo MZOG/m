@@ -57,7 +57,7 @@ export default function Header() {
       <Container classes="flex justify-between items-center">
         <div className="flex items-center">
           <Link href="/">
-            <a>
+            <a aria-label="Marcin Zogrodnik Start">
               <svg
                 width="55"
                 height="33"
