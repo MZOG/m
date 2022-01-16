@@ -33,6 +33,7 @@ export default function Post({ post, allPosts }) {
                 coverImage={post.coverImage}
                 date={post.date}
               />
+
               <PostBody content={post.content} />
             </article>
           </>
@@ -57,6 +58,7 @@ export async function getStaticProps({ params }) {
       "content",
       "ogImage",
       "coverImage",
+      "excerpt",
     ],
     "_blog"
   );

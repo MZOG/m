@@ -7,7 +7,7 @@ export default function HomepageOffer() {
         classes="flex flex-col md:flex-row md:justify-between md:items-center gap-5 py-10 md:py-20"
         id="strona-www"
       >
-        <div className="px-10 md:px-0 order-2 md:order-1 md:w-1/2 md:flex items-center justify-center md:p-20">
+        <div className="px-10 order-2 md:order-1 md:w-1/2 md:flex items-center justify-center md:p-20">
           <svg
             viewBox="0 0 346 241"
             fill="none"
@@ -114,7 +114,7 @@ export default function HomepageOffer() {
             <span className="text-mz-default">za darmo</span>, brzmi dobrze?
           </p>
         </div>
-        <div className="md:w-5/12 px-10 md:px-0 mb-10 md:mb-0 flex items-center justify-center">
+        <div className="md:w-5/12 px-10 mb-10 md:mb-0 flex items-center justify-center">
           <svg
             width="100%"
             height="100%"

@@ -8,7 +8,7 @@ export default function PostHeader({ title, coverImage, date }) {
     <>
       <PostTitle>{title}</PostTitle>
       <div className="mx-auto">
-        <div className="mb-6 text-base text-center">
+        <div className="mb-6 text-[14px] md:text-center italic">
           <DateFormatter dateString={date} />
         </div>
       </div>

@@ -1,9 +1,9 @@
 .markdown {
-  @apply text-mz-secondary text-[17px] leading-normal font-normal;
+  @apply text-mz-secondary md:text-[18px] leading-relaxed font-normal;
 }
 
 .markdown p strong{
-  @apply font-medium text-mz-default bg-blue-50;
+  @apply font-medium text-mz-default;
 }
 
 .markdown p,
@@ -14,16 +14,34 @@
 }
 
 .markdown h2 {
-  @apply text-[27px] text-mz-default mt-8 mb-4 font-medium leading-snug;
+  @apply
+  text-[22px] md:text-[27px]
+  text-mz-default
+  mt-5 md:mt-8
+  font-semibold
+  leading-snug;
+}
+
+.markdown h3 {
+  @apply
+  text-[20px] md:text-[24px]
+  font-semibold
+  mt-5 md:mt-8
+  leading-snug;
+}
+
+.markdown h4 {
+  @apply
+  text-[18px]
+  md:text-[21px]
+  font-semibold
+  mt-5 md:mt-8
+  leading-snug;
 }
 
 .markdown h2 a,
 .markdown h3 a,
-.markdown h4 a,
+.markdown h1 a,
 .markdown h5 a{
   @apply text-mz-default hover:underline bg-blue-50 underline-offset-2 decoration-2 ;
-}
-
-.markdown h3 {
-  @apply text-2xl mt-8  mb-4 leading-snug;
 }

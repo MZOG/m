@@ -5,7 +5,7 @@ export default function Layout({ children, allPosts }) {
   return (
     <>
       <Header />
-      <main className="mt-[60px] md:mt-[100px]">{children}</main>
+      <main className="mt-[80px] md:mt-[100px]">{children}</main>
       <Footer allPosts={allPosts} />
     </>
   );
