@@ -30,7 +30,7 @@ export default function ContactUs() {
             </span>
           </p>
         </div>
-        <div className="mt-10 md:mt-0 md:w-1/4">
+        <div className="mt-10 md:mt-0 md:w-1/4 p-10 md:p-0">
           <svg
             viewBox="0 0 236 183"
             fill="none"

@@ -25,7 +25,7 @@ export default function Testimonials({ allTestimonials }) {
             );
           })}
         </div>
-        <div className="mt-10 md:mt-0 md:w-1/3 p-3 md:p-10">
+        <div className="mt-10 md:mt-0 md:w-1/3 px-10">
           <svg
             viewBox="0 0 327 147"
             fill="none"

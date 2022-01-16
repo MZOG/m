@@ -7,7 +7,7 @@ export default function HomepageOffer() {
         classes="flex flex-col md:flex-row md:justify-between md:items-center gap-5 py-10 md:py-20"
         id="strona-www"
       >
-        <div className="order-2 md:order-1 md:w-1/2 md:flex items-center justify-center md:p-20">
+        <div className="px-10 md:px-0 order-2 md:order-1 md:w-1/2 md:flex items-center justify-center md:p-20">
           <svg
             viewBox="0 0 346 241"
             fill="none"
@@ -114,8 +114,10 @@ export default function HomepageOffer() {
             <span className="text-mz-default">za darmo</span>, brzmi dobrze?
           </p>
         </div>
-        <div className="md:w-5/12 mb-10 md:mb-0 flex items-center justify-center">
+        <div className="md:w-5/12 px-10 md:px-0 mb-10 md:mb-0 flex items-center justify-center">
           <svg
+            width="100%"
+            height="100%"
             viewBox="0 0 397 219"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -197,7 +199,7 @@ export default function HomepageOffer() {
       </Container>
 
       <Container classes="pb-10 md:pb-20">
-        <div className="mb-5 md:mb-10">
+        <div className="mb-10">
           <p className="text-center text-sm md:text-base md:text-left text-mz-default bg-blue-50 inline-block py-1 px-4 rounded-full">
             Razem ze stroną internetową dostaniesz:
           </p>

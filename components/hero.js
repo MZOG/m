@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <Container classes="md:flex justify-between items-center pt-[20px]  md:mb-[100px] md:pt-[100px]">
-      <div className="md:w-2/3 mb-10">
+      <div className="md:w-2/3 md:mb-10">
         <h1 className="text-[25px] text-center md:text-left md:text-[37px] font-bold mb-5 md:mb-10 leading-tight">
           <span className="text-mz-default">Rozwiń</span> swój biznes w{" "}
           <span className="text-mz-default">internecie</span>.
@@ -27,7 +27,7 @@ export default function Hero() {
           </Link>
         </div>
       </div>
-      <div className="flex justify-center md:w-1/3">
+      <div className="flex justify-center md:w-1/3 px-10">
         <svg
           width="343"
           height="306"
