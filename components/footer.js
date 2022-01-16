@@ -23,7 +23,7 @@ export default function Footer({ allPosts }) {
             {allPosts.slice(0, 3).map((post) => (
               <li key={post.slug} className="mt-1">
                 <Link href={`/blog/${post.slug}`}>
-                  <a className="text-sm text-mz-default hover:underline">
+                  <a className="text-mz-default hover:underline">
                     {post.title}
                   </a>
                 </Link>
@@ -36,14 +36,12 @@ export default function Footer({ allPosts }) {
           <ul>
             <li className="mt-1">
               <Link href="/regulamin">
-                <a className="text-sm text-mz-default hover:underline">
-                  Regulamin
-                </a>
+                <a className="text-mz-default hover:underline">Regulamin</a>
               </Link>
             </li>
             <li className="mt-1">
               <Link href="/prywatnosc">
-                <a className="text-sm text-mz-default hover:underline">
+                <a className="text-mz-default hover:underline">
                   Polityka prywatności
                 </a>
               </Link>

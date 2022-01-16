@@ -21,7 +21,7 @@ export default function Hero() {
             </a>
           </Link>
           <Link href="/#realizacje">
-            <a className="md:ml-5 px-5 py-2 inline-block font-medium rounded-full hover:text-mz-default hover:bg-blue-50">
+            <a className="md:ml-5 px-5 py-2 inline-block font-medium rounded-full text-mz-default bg-blue-50 hover:bg-mz-default hover:text-white">
               Sprawdź realizacje
             </a>
           </Link>

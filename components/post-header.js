@@ -13,7 +13,7 @@ export default function PostHeader({ title, coverImage, date }) {
         </div>
       </div>
       <div className="max-w-3xl mb-5 md:mb-10 mx-auto">
-        <CoverImage title={title} src={coverImage} height={320} width={840} />
+        <CoverImage title={title} src={coverImage} height={423} width={768} />
       </div>
     </>
   );
