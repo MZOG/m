@@ -31,3 +31,7 @@ body {
 .custom-post ol li ul {
   @apply list-disc list-inside ml-5 my-4;
 }
+
+#menu-toggle:checked + #menu {
+  display: block;
+}

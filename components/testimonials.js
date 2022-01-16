@@ -11,7 +11,6 @@ export default function Testimonials({ allTestimonials }) {
       <div className="md:flex items-center">
         <div className="flex flex-col gap-5 md:w-2/3">
           {allTestimonials.slice(0, 2).map((item, index) => {
-            console.log(index);
             return (
               <div
                 className={`p-4 md:p-7 rounded-xl border border-dashed border-mz-default ${

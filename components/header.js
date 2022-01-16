@@ -27,9 +27,14 @@ export default function Header() {
   ];
 
   const nav = navLinks.map((item) => (
-    <li key={item.id} className="inline ml-12 hover:text-mz-default">
+    <li
+      key={item.id}
+      className="md:inline md:ml-8 xl:ml-12 md:hover:text-mz-default"
+    >
       <Link href={item.link}>
-        <a>{item.name}</a>
+        <a className="text-lg md:text-base font-medium md:font-normal p-2 md:p-0 block md:inline">
+          {item.name}
+        </a>
       </Link>
     </li>
   ));
@@ -50,17 +55,18 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed backdrop-filter backdrop-blur-lg bg-white/50 w-full top-0 py-4 z-50 trasition ease-in-out duration-500 ${
+      className={`fixed backdrop-filter backdrop-blur-lg bg-white/50 w-full top-0 py-2 md:py-4 z-50 trasition ease-in-out duration-500 ${
         animateHeader && "shadow-sm"
       }`}
     >
-      <Container classes="flex justify-between items-center">
+      <Container classes="flex justify-between items-start md:items-center">
         <div className="flex items-center">
           <Link href="/">
             <a aria-label="Marcin Zogrodnik Start">
               <svg
-                width="55"
-                height="33"
+                className="max-w-[40px] md:max-w-[50px] my-2 md:my-0"
+                width="100%"
+                height="100%"
                 viewBox="0 0 55 33"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -78,15 +84,35 @@ export default function Header() {
           </Link>
           <a
             href="tel:739907919"
-            className="font-medium leading-none text-mz-default text-[14px] inline-block ml-10 px-4 py-2 rounded-full border border-dashed border-mz-default hover:bg-mz-default hover:text-white"
+            className="hidden md:block font-medium leading-none text-mz-default text-[14px] inline-block ml-10 px-4 py-2 rounded-full border border-dashed border-mz-default hover:bg-mz-default hover:text-white"
           >
             Zadzwoń: +48 739 907 919
           </a>
         </div>
 
-        <nav>
-          <ul>{nav}</ul>
-        </nav>
+        <div className="flex flex-col items-end">
+          <label
+            htmlFor="menu-toggle"
+            className="p-2 block md:hidden pointer-cursor "
+          >
+            <svg
+              className="fill-current text-mz-secondary"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+            >
+              <title>menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </label>
+
+          <input className="hidden" type="checkbox" id="menu-toggle" />
+
+          <nav className="hidden md:block" id="menu">
+            <ul className="text-right md:text-left  my-5 md:my-0">{nav}</ul>
+          </nav>
+        </div>
       </Container>
     </header>
   );

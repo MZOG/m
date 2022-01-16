@@ -1,8 +1,6 @@
 import { getAllPosts, getAllShowcase, getAllTestimonials } from "../lib/api";
-import { CMS_NAME } from "../lib/constants";
 import Meta from "../components/meta";
 import Layout from "../components/layout";
-import Head from "next/head";
 import Hero from "../components/hero";
 import HomepageOffer from "../components/homepageOffer";
 import Showcase from "../components/showcase";
