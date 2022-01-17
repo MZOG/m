@@ -18,9 +18,7 @@ export default function Kontakt({ allPosts }) {
           </h1>
 
           <p className="md:text-[18px]">
-            Masz pytanie dotyczące strony internetowej? Zadzwoń lub napisz do
-            mnie. Nie martw się, nie będę za wszelką cenę próbował sprzedać Ci
-            swoich usług.
+            Masz pytanie dotyczące strony internetowej? Zadzwoń lub napisz.
           </p>
         </div>
       </Container>

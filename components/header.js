@@ -32,7 +32,7 @@ export default function Header() {
       className="md:inline md:ml-8 xl:ml-12 md:hover:text-mz-default"
     >
       <Link href={item.link}>
-        <a className="text-lg md:text-base font-medium md:font-normal p-2 md:p-0 block md:inline">
+        <a className="text-lg md:text-base font-medium p-2 md:p-0 block md:inline">
           {item.name}
         </a>
       </Link>

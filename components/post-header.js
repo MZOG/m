@@ -12,9 +12,9 @@ export default function PostHeader({ title, coverImage, date }) {
           <DateFormatter dateString={date} />
         </div>
       </div>
-      <div className="max-w-3xl mb-5 md:mb-10 mx-auto">
+      {/* <div className="max-w-3xl mb-5 md:mb-10 mx-auto">
         <CoverImage title={title} src={coverImage} height={423} width={768} />
-      </div>
+      </div> */}
     </>
   );
 }

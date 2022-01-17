@@ -7,20 +7,19 @@ ogImage:
   url: "/assets/blog/images/cover.jpg"
 ---
 
-Przez ostatni rok bardzo mało działo się na mojej stronie internetowej, powodem
-było dużo więcej pracy, po której nie miałem chęci chociażby na napisanie nowego
-artykułu na blog. Faktem jest też to, że nie byłem systematayczny w swoich
-działaniach, napisałem jeden artykuł, przerwa, po 2 miesiącach dodałem kolejny
-tekst, zauważyłem, że tak nie może być.
+Udało się! W końcu jest! Moja nowa strona internetowa.
 
-Nowy rok to oczywiście nowe postanowienia i deklaracje. Nigdy nie miałem typowych
-postanowień typu - "od stycznia zaczynam o siebie dbać (czyt. pójdę na siłownię)",
-ponieważ akurat to robię przez cały rok. Potrzebowałem czegoś, co rozwinie mnie,
-firmę i będę z tego w pełni zadowolony.
+## Next.js + Tailwind
 
-Stworzenie nowej strony internetowej daje mi dodatkowej motywacji, strona jest
-przepisana na **Next.js** (wcześniej używałem Gatsby.js), jest czytelna i przede
-wszystkim szybka.
+Decyzja o migracji z **Gatsby** na **Next.js** była spontaniczna, obydwa
+frameworki wykorzystują dobrze mi znany React, więc nie miałem żadnych
+"przygód" z pisaniem nowej strony.
+
+Kolejną ważną decyzją jest skorzystanie z gotowego frameworka CSS, którym
+jest **Tailwind**. Przez długi czas byłem fanem pisania każdej linijki
+css/scss samemu, dawało mi to sporo radości.
+
+<!-- ![Tux, the Linux mascot](/assets/images/marcin-zogrodnik.jpg) -->
 
 ## Podsumowanie miesiąca
 
@@ -32,4 +31,4 @@ Front End.
 
 Wciąż mało osób wie co to jest JAMstack oraz jakie są korzyści używania tej
 technologii. Pojawi się więc więcej artykułów, w których postaram się wyjaśnić
-co to jest, jak działa i dlaczego jest to ważne np. dla małych i średnich firm.
+co to jest, jak działa i dlaczego jest to ważne np. dla **małych i średnich firm**.
